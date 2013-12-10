@@ -1,0 +1,119 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+
+    <LinearLayout
+        android:id="@+id/layout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="134dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.53"
+            android:onClick="onClick_Button_Album"
+            android:text="Album" />
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="139dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.72"
+            android:onClick="onClick_Button_Camera"
+            android:text="Camera" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="93dp"
+            android:layout_height="wrap_content"
+            android:onClick="onClick_Button_Find"
+            android:text="Find" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/preview"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.5" />
+
+    <LinearLayout
+        android:id="@+id/layout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/result1"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:onClick="imageResult1_click" />
+
+            <Button
+                android:id="@+id/buttonresult1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="buttonrsult1_click"
+                android:text="swap!"
+                android:textSize="12dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/result2"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:onClick="imageResult2_click" />
+
+            <Button
+                android:id="@+id/buttonresult2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="buttonrsult2_click"
+                android:text="swap!"
+                android:textSize="12dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/result3"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:onClick="imageResult3_click" />
+
+            <Button
+                android:id="@+id/buttonresult3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="buttonrsult3_click"
+                android:text="swap!"
+                android:textSize="12dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
